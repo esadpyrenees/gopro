@@ -1,8 +1,4 @@
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const Image = require("@11ty/eleventy-img")
-const path = require('path')
-
-const fs = require("fs");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
@@ -24,42 +20,4 @@ module.exports = function(eleventyConfig) {
 			animated: true,
 		},
 	});
-
-
-  // shortcode (should be unused)
-  eleventyConfig.addShortcode("image", async function (src, alt, widths = [400, 800], sizes = "100vh") {
-    widths = [400, 800]
-    src = path.dirname(this.page.inputPath) + "/" + src;
-		let metadata = await Image(src, {
-			widths,
-			formats: ["avif", "jpg"],
-		});
-		let imageAttributes = {
-			alt,
-			sizes,
-			loading: "lazy",
-			decoding: "async",
-		};
-		// You bet we throw an error on a missing alt (alt="" works okay)
-		return Image.generateHTML(metadata, imageAttributes);
-	});
-
-
-	// used in markdown files
-	eleventyConfig.addNunjucksAsyncShortcode("inlineSvg", async url => {
-    let options = {
-      widths: [300],
-      formats: ["svg"],
-      svgShortCircuit: true
-    };
-    let stats = await Image(url, options);
-    const svgUrl = stats.svg[0].url;
-
-    const data = fs.readFileSync(`./${svgUrl}`, function(err, contents) {
-      if (err) return err;
-      return contents;
-    });
-
-    return `<figure class="svg">${ data.toString("utf8") }</figure>`;
-  });
 }

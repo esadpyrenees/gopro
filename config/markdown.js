@@ -8,6 +8,8 @@ const markdownItAbbr = require('markdown-it-abbr');
 const markdownItContainer = require('markdown-it-container');
 const markdownItFigures = require('markdown-it-image-figures');
 
+// Markdown configuration with way-too-much plugins
+
 module.exports = function(eleventyConfig) {
 	// Markdown config
   let options = {
@@ -53,13 +55,6 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAttrs,{
       allowedAttributes: ['id', 'class']
     });
-
-
-  // markdownify filter to parse frontmatter stuff
-  // don’t know why I need ?? "" …
-  eleventyConfig.addFilter('markdownify', (markdownString) =>
-    md.render(markdownString ?? "")
-  );
 
   eleventyConfig.setLibrary("md", md)
 
