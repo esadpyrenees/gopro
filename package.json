@@ -1,0 +1,40 @@
+{
+  "name": "gopro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "sync": "rsync -avz --progress --delete -e \"ssh -p 3522\" public/ ateliersesad@esad-pyrenees.fr:www/gopro/",
+    "deploy": "rm -r public && npx @11ty/eleventy --pathprefix gopro && npm run sync"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^5.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@uncenter/eleventy-plugin-toc": "^1.0.3",
+    "eleventy-plugin-toc": "^1.1.5",
+    "front-matter": "^4.0.2",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-attrs": "^4.2.0",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-image-figures": "^2.1.1",
+    "markdown-it-implicit-figures": "^0.12.0",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-sub": "^2.0.0",
+    "markdown-it-sup": "^2.0.0",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "sharp": "^0.33.5"
+  }
+}
