@@ -1,0 +1,25 @@
+{% set currentUrl %}{{ page.url }}{% endset %}
+
+<nav>
+  
+  <h1>Auto-défense économique</h1>
+  <p>ÉSAD Pyrénées</p>
+  <ul role="list">
+    <li>
+      <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Accueil</a>
+    </li>
+
+    {% for page in collections.pages | sortByOrder %}
+    <li>
+      <a 
+        {% if currentUrl === page.url %}aria-current="page"{% endif %} 
+        href="{{ page.url }}">
+          {{ page.data.key }}
+      </a>
+      {% if currentUrl === page.url %}
+        {{ content | toc | safe }}   
+      {% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>

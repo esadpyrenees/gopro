@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+{% if page.url  !== '/' %}
+<header>
+  <h1>{{ title }}</h1>
+</header>
+{% endif %}
+<main>
+  <article>
+    {{ content | safe }}
+  </article>
+</main>

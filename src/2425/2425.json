@@ -1,0 +1,4 @@
+{
+  "layout": "page.njk",
+  "permalink": "/2425/{{ page.fileSlug }}/"
+}
