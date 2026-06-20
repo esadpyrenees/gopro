@@ -12,8 +12,7 @@ Les enjeux de la professionnalisation en école d’art sont parcourus par de no
 
 Ce site contient les propositions de travail faites aux étudiante·s du master design de l’ÉSAD Pyrénées, les traces et prises de notes effectuées lors des rencontres professionnelles ainsi qu’un ensemble de ressources associées au programme de professionnalisation.
 
-[→ 2024 – 2025](2425) {.bigbutton}
-
+[→ 2025 – 2026](2526) {.bigbutton}
 
 ::: big
 > Travaillez dans un magasin bio. { #survive }

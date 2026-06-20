@@ -10,6 +10,12 @@ updated: 2024-12-03
 layout: page.njk
 ---
 
+## Ressources générales
+
+Le [Kit de survie des métiers graphiques](http://kitdesurvie.metiers-graphiques.fr/) est édité par Métiers Graphiques, association de défense et d’information pour les professionnels du graphisme.
+
+[Le guide de l’artiste auteur](https://leguidedelartiste.com/), édité par la journaliste & artiste Valérie Auriel est une mine de renseignements utiles sur l’activité profesionnelle des artistes.
+
 ## Organisations et syndicats
 
 Le monde hostile de l’activité économique des artistes et designers l’est moins quand on ne s’y engage pas seul⋅e. Des structures (syndicats, associations, groupes informels ou plus structurés) existent pour accompagner les étudiant⋅es, les artistes et designers débutant⋅es comme confirmé⋅es. Leurs sites regroupent des ressources bien plus nombreuses et précises que celles listées ci-dessous.
@@ -34,10 +40,10 @@ Les statuts et modalités d’activité des artistes et designers évoluent à g
 
 ### Logiques collectives
 
-[L’association peut-elle être un mode d’entrepreneuriat ?](https://www.questions-asso.com/episodes/s02/episode6.html) Pourquoi, et comment, peut-on envisager la structuration associative comme modèle entrepreneurial.
+[L’association peut-elle être un mode d’entrepreneuriat ?](https://www.questions-asso.com/episodes/s02/episode15.html) Pourquoi, et comment, peut-on envisager la structuration associative comme modèle entrepreneurial.
 
 ### Livres + online
-Un livre de référence est [Profession Graphiste Indépendant](http://www.profession-graphiste-independant.com/) mais aussi [Créatif en free-lance : Je me lance !](http://www.creatif-freelance.com/), de Julien Moya. Voir aussi en ligne le guide [Kit de survie des métiers graphiques](http://kitdesurvie.metiers-graphiques.fr/).
+Un livre de référence fut _Profession Graphiste Indépendant_ mais aussi _Créatif en free-lance : Je me lance !_ de Julien Moya. On en garde trace ici pour mémoire, mais les sites n’existent plus.
 
 ### Au secours je suis artiste – en vidéo
 “Au secours je suis artiste” est une web série de 13 vidéos (de deux à trois minutes) qui a pour objectif d'accompagner les artistes plasticiens et auteurs dans la compréhension de leurs démarches administratives professionnelles, en répondant à plusieurs questions pratiques et ciblées : Je déclare quoi aux impôts? Je vends une oeuvre, que dois-je faire? Je dois noter quoi dans la cession de droits? etc.

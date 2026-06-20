@@ -34,6 +34,9 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./static/img/");
   eleventyConfig.addPassthroughCopy("./static/docs/");
 
+  // copy all :)
+  eleventyConfig.addPassthroughCopy({ "src/2526/": "2526" });  
+
   // watch and reload opn CSS change
   eleventyConfig.addWatchTarget("./static/css/");
 
